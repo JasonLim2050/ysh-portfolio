@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+
+/* ----- General ----- */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #0f1121;
+    line-height: 1.5;
+    min-width: 320px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    background: linear-gradient(330deg, #e05252 0%, #52e0e0 50%, #e05252 100%);
+}
+
+/* ----- Header ----- */
+
+header {
+    height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 140px;
+    }
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    width: 100%;
+    height: 90px;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 300;
+    word-break: break-all;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
+}
+footer .author {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+}
+
+/* ----- Social Icons ----- */
+
+.social i {
+    font-size: 22px;
+}
+a.twitter:hover {
+    color: #2aa9e0;
+}
+a.reddit:hover {
+    color: #ff4500;
+}
+a.github:hover {
+    color: #000;
+}
+a.youtube:hover {
+    color: #fe0000;
+}
+a.linkedin:hover {
+    color: #0275b4;
+}
+a.discord:hover {
+    color: #7289D9;
+}
+
+/* ----- Stack Icons ----- */
+
+.stacks img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);  
+}
+.stacks img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);  
+}
+
+/* ----- Fade In transitions ----- */
+
+nav h1, nav a, nav p, .avatar, .social li, .social div {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
